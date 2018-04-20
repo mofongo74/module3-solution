@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Gugi:300,400,700);
+
+* {
+  box-sizing: border-box;
+  font-family: "Gugi", cursive, sans-serif;
+  font-size: 12pt;
+}
+a.visible-xs:hover {
+  color:#f6b319;
+  text-decoration: none;
+}
+body {
+  color: #fff;
+  background-color: #61122f;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+.nav a:hover, .nav a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { 
+  text-shadow: -2px -2px 4px #E7E7E7;
+  color: #61122f;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-top: 10px;
+  left: 8px;
+  top: 6px;
+  position: absolute;
+}
+#nav-list a {
+  color: #951C49;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+.navbar-header button.navbar-toggle {
+  border: 0px transparent;
+}
+/*nav#header-nav.navbar.navbar-default, .navbar-brand,*/ .navbar-header, div.container {
+  min-height: 50px;
+}
+div.container {
+  height: auto;
+}
+.navbar-brand {
+  margin-right: -15px;
+  margin-left: -30px;
+}
+
+
+.btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after {
+  clear: none;
+}
+/* END HEADER */
+
+
+
+
+
+/* HOME PAGE */
+.menuItemBox {
+  background-color: #ededed;
+  /*border: 1px solid black;*/
+  color: #000000;
+  min-height: 700px;
+  max-height: auto;
+  margin: 20px;  
+  padding: 8px;
+  position: relative;
+}
+
+.sectionTitle {
+  /*border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;*/
+  padding: 4px;  
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;  
+  font-size: 1.25em;
+}
+
+.beefTab  {
+  text-shadow: -2px -2px 4px #D45454;
+}
+
+.chickenTab  {
+  text-shadow: -2px -2px 4px #FFA0A0;
+}
+
+.sushiTab  {
+  text-shadow: -2px -2px 4px #d4c492;
+}
+
+h1 {
+  font-family: "Gugi", cursive, sans-serif;
+  font-size: 1.75em;
+  margin-bottom: 5vw;
+}
+
+h1, .sectionTitle {
+  font-weight: bold;
+}
+
+p {
+  height: auto;
+  margin-top: 10px;
+  padding: 0 8px;
+}
+
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#menu-tile, #specials-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#specials-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+/* END HOME PAGE */
+
+
+/********** desktop - md **********/
+@media (min-width: 992px) {
+  .col-md-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+/********** tablet - sm **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-6 {
+    float: left;
+    width: 50%;
+  }
+}
+
+/********** mobile - xs **********/
+@media (max-width: 767px) {
+  .col-xs-12 {
+    float: left;
+    width: 100%;
+  }
+  
+  .visible-xs {
+    position: absolute;
+    bottom: 0;
+  }
+
+  /* Header */
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu emojii */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  /* End Header */
+}
